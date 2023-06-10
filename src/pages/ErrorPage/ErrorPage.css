@@ -1,0 +1,24 @@
+.error-content {
+  background-color: #000;
+  background-image: url('../../assets/errorBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: calc(100vh - 158px);
+  min-height: 330px;
+  display: flex;
+  align-items: center;
+}
+
+.error-content .button-primary {
+  margin-top: 45px;
+}
+
+.error-content .text {
+  max-width: 460px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+
