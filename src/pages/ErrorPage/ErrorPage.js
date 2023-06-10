@@ -17,7 +17,7 @@ const ErrorPage = () => {
               <h3>RollingBoard</h3>
             </a>
           </div>
-          <nav class="header-nav d-flex align-items-center">
+          <nav className="header-nav d-flex align-items-center">
             <li>
               <a href="#">Projects</a>
             </li>
@@ -41,21 +41,21 @@ const ErrorPage = () => {
       <main id="main">
         <section className="error-content">
           <div className="container d-flex flex-direction-column align-items-center">
-            <h1 className="error-title">Sorry! Page not found</h1>
-            <p className="error-text">Head homepage or use the search to find what you're looking for.</p>
-            <button className="error-button" onClick={() => navigate(`../`)} >Back to Homepage</button>
+            <h1 className="title title-h1">Sorry! Page not found</h1>
+            <p className="text text-large">Head homepage or use the search to find what you're looking for.</p>
+            <button className="button-primary" onClick={() => navigate(`/`)} >Back to Homepage</button>
           </div>
         </section>
       </main>
       <footer className="footer">
         <div className="container">
           <div className="footer-content d-flex justify-content-space-between align-items-center">
-            <div class="footer-logo">
+            <div className="footer-logo">
               <a href="#">
                 <img src={footerLogoImg} alt="#" />
               </a>
             </div>
-            <nav class="footer-nav d-flex align-items-center">
+            <nav className="footer-nav d-flex align-items-center">
               <li>
                 <a href="#">GeoBo</a>
               </li>
@@ -67,7 +67,7 @@ const ErrorPage = () => {
               </li>
             </nav>
           </div>
-          <div class="footer-text">
+          <div className="footer-text">
             <p>© 2022. React 2022Q1</p>
           </div>
         </div>

@@ -1,119 +1,3 @@
-p, h1 , h2, h3, h4, h5, h6 {
-  margin: 0;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.d-flex {
-  display: flex;
-}
-  
-.d-grid {
-  display: grid;
-}
-  
-a {
-  text-decoration: none;
-  color: inherit;
-  outline: none;
-}
-  
-img {
-   max-width: 100%;
-}
-  
-.justify-content-space-between {
-  justify-content: space-between;
-}
-  
-.justify-content-center {
-  justify-content: center;
-}
-
-.align-items-center {
-  align-items: center;
-}
-  
-.flex-direction-column {
-  flex-direction: column;
-}
-  
-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-}
-
-.container {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.header {
-  padding: 40px 0;
-  width: 100%;
-  background-color: #000;
-  margin-bottom: 0;
-}
-
-.logo {
-  color: #fff;
-  font-weight: 600;
-  font-size: 21px;
-  line-height: 1.3;
-}
-
-.logo img + a {
-  margin-left: 10px;
-}
-
-.header-nav, .footer-nav {
-  color: #909296;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  list-style: none;
-  cursor: pointer;
-}
-
-.header-nav li {
-  border: 2px solid transparent;
-}
-
-.header-nav li:hover {
-  color: #fff;
-  border-bottom: 2px solid #fff;
-}
-
-.header-nav li + li {
-  margin-left: 40px;
-}
- 
-.header-nav-btn {
-  color: #fff;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;  
-}
-
-.header-nav-btn .btn + .btn {
-  margin-left: 20px;
-}
-  
-.header-nav-btn .btn {
-  padding: 8px 18px;
-  border: 1px solid transparent;
-  border-radius: 6px;
- }
-
-.header-nav-btn .btn:hover {
-  border: 1px solid #fff;
-}
-
 .about-project {
   background-color: #000;
   padding: 70px 0;
@@ -123,6 +7,10 @@ button {
   margin: 0;
 }
 
+.about-project .button-primary {
+  margin-top: 45px;
+}
+
 .about-project-type-title {
   font-weight: 600;
   font-size: 20px;
@@ -130,50 +18,27 @@ button {
   color: #fff;
 }
 
-.about-project-title {
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 1;
-  color: #fff;
+.about-project .title {
   max-width: 660px;
   text-align: center;
   margin-top: 12px;
 }
 
-.about-project-text {
+.about-project .text {
   margin-top: 20px;
-  color: #909296;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
   text-align: center;
   max-width: 460px;
 }
 
-.about-project-btn {
-  margin-top: 44px;
-  background: #1098AD;
-  border-radius: 8px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.5;
-  padding: 4px 14px;
-}
-
 .project-advantages {
   background-color: #000;
-  padding: 50px 190px;
+  padding-top: 50px;
 }
 
 .project-advantages-card {
-  background: linear-gradient(180deg, #101113 0%, rgba(16, 17, 19, 0) 100%);
+  background: linear-gradient(180deg, #1c1c1f -50%, #010101 100%);
   padding: 60px 20px;
   border-radius: 17px;
-}
-
-.container .project-advantages-card + .project-advantages-card {
-  margin-left: 50px;
 }
 
 .project-advantages-card-title {
@@ -184,11 +49,7 @@ button {
   padding-top: 27px;
 }
 
-.project-advantages-card-text {
-  color: #909296;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
+.project-advantages-card .text {
   max-width: 280px;
   text-align: center;
   padding-top: 10px;
@@ -196,11 +57,7 @@ button {
 
 .project-features {
   background-color: #000;
-  padding-top: 100px;
-}
-
-.project-features .universal {
-  padding: 60px 190px 60px 250px;
+  padding: 50px 0;
 }
 
 .info-box-type-title {
@@ -214,9 +71,6 @@ button {
   margin-right: 10px;
 }
 
-.project-features-info-box {
-  padding-top: 90px;
-}
 
 .project-features-info-box-title {
   font-weight: 700;
@@ -224,7 +78,7 @@ button {
   line-height: 1.1;
   color: #fff;
   max-width: 440px;
-  padding: 20px 75px 0 0;
+  padding-top: 20px;
 }
 
 .project-features-info-box-text {
@@ -241,31 +95,3 @@ button {
   border-radius: 15px;
 }
 
-.project-features-unlimited{
-  padding-top: 60px;
-  background-color: #000;
-  padding: 100px 0;
-}
-
-.footer {
-  background-color: #000;
-  padding: 60px 0 10px 0;
-  border-top: 1px solid #25262B;
-}
-
-.footer-nav {
-  font-size: 14px;
-}
-
-.footer-nav li + li {
-  margin-left: 30px;
-}
-
-.footer-text {
-  text-align: center;
-  color: #5C5F66;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.5;
-  padding-top: 8px;
-}
