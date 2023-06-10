@@ -1,13 +1,13 @@
 import React from 'react';
-import './HomePage.css';
-import logo from '../assets/logo.png';
-import integrateImg from '../assets/integrate.png';
-import colaborateImg from '../assets/colaborate.png';
-import succeedImg from '../assets/succeed.png';
-import availibleImg from '../assets/availible.svg';
-import projectsImg from '../assets/projects.png';
-import unlimitedImg from '../assets/unlimited.png';
-import footerLogoImg from '../assets/footer-logo.png';
+import '../HomePage/HomePage.css';
+import logo from '../../assets/logo.png';
+import integrateImg from '../../assets/integrate.png';
+import colaborateImg from '../../assets/colaborate.png';
+import succeedImg from '../../assets/succeed.png';
+import availibleImg from '../../assets/availible.svg';
+import projectsImg from '../../assets/projects.png';
+import unlimitedImg from '../../assets/unlimited.png';
+import footerLogoImg from '../../assets/footer-logo.png';
 
 const HomePage = () => {
   return (
