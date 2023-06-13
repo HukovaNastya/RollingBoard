@@ -8,6 +8,7 @@ import availableImg from '../../assets/availible.svg';
 import projectsImg from '../../assets/projects.png';
 import unlimitedImg from '../../assets/unlimited.png';
 import footerLogoImg from '../../assets/footer-logo.png';
+import packageImg from '../../assets/package.png';
 
 const HomePage = () => {
   return (
@@ -89,7 +90,7 @@ const HomePage = () => {
             <div className='container d-flex justify-content-space-between align-items-center'>
                 <div className="gradient-border">
                     <div className='project-features-info-img-box'>
-                        <img src={unlimitedImg} alt="#"/>
+                        <img src={packageImg} alt="#"/>
                     </div>
                 </div>
                 <div className='project-features-info-box d-flex flex-direction-column'>
@@ -101,6 +102,23 @@ const HomePage = () => {
                     <p className='project-features-info-box-text'>You can specify additional info in task description and assign users.</p>
                 </div>
             </div>
+       </section>
+       <section className='project-features'>
+           <div className='container d-flex justify-content-space-between align-items-center'>
+               <div className='project-features-info-box d-flex flex-direction-column'>
+                   <div className='d-flex'>
+                       <img className='info-img' src={availableImg} alt="#"/>
+                       <h3 className='info-box-type-title'>Unlimited</h3>
+                   </div>
+                   <h1 className='project-features-info-box-title'>No limits for all users.</h1>
+                   <p className='project-features-info-box-text'>Unlimited kanban boards, columns and tasks.</p>
+               </div>
+               <div className="gradient-border">
+                   <div className='project-features-info-img-box'>
+                       <img src={unlimitedImg} alt="#"/>
+                   </div>
+               </div>
+           </div>
        </section>
      </main>
      <footer className="footer">
