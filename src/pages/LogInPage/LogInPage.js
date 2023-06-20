@@ -3,17 +3,16 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Form from '../../components/Form';
 import tickImg from '../../assets/availible.svg';
-import '../SignUpPage/SignUp.css';
 import { Link } from "react-router-dom";
 
 const LogInPage = () => {
   return (
     <div>
-      <Header />
-      <section className='sign-up full-height'>
-        <div className='container d-flex justify-content-evenly'>
+      <Header /> 
+      <section className='auth-wrapper full-height d-flex  justify-content-center'>
+        <div className='container d-flex align-items-center justify-content-evenly'>
           <div className='info-box d-flex flex-direction-column'>
-            <div className='d-flex'>
+            <div className='d-flex align-items-center'>
               <img className='info-img' src={tickImg} alt="#"/>
               <h3 className='info-box-type-title'>Project Management App</h3>
             </div>
@@ -22,39 +21,37 @@ const LogInPage = () => {
           </div>
           <div>
            <Form>
-             <div className='form-wrapper d-flex flex-direction-column'>
-               <div>
-                 <h3 className='title title-h2 title-large'>Log in to your account</h3>
-               </div>
-               <div className='form-box'>
-                 <label className='auth-label'>
-                   Login
-                   <input
-                     className='input-text'
-                     type="email"
-                     name="email"
-                     placeholder='email'
-                   />
-                 </label>
-               </div>
-               <div className='form-box'>
-                 <label className='auth-label'>
-                   Password
-                   <input
-                     className='input-text'
-                     type="password"
-                     name="password"
-                     placeholder='passwords'
-                   />
-                 </label>
-               </div>
-               <div>
+            <div>
+              <h3 className='title title-h2 title-large'>Log in to your account</h3>
+            </div>
+            <div className='form-wrapper d-flex flex-direction-column'>
+              <div className='form-container d-flex flex-direction-column'>
+                <label for="login">Login</label>
+                <input
+                  id="login"
+                  className='input-text'
+                  type="email"
+                  name="email"
+                  placeholder='email'
+                />
+              </div>
+              <div className='form-container d-flex flex-direction-column'>
+                <label for="login">Password</label>
+                <input
+                  id="password"
+                  className='input-text'
+                  type="password"
+                  name="password"
+                  placeholder='passwords'
+                />
+              </div>
+              <div>
                  <h3 className='text text-medium'>Don't have an account? <span className='span-text text'><Link to='/sign-in'>Sign up</Link></span></h3>
                </div>
                <div className='button-wrapper'>
                  <button className='button-default'>Login</button>
                </div>
-             </div>
+            </div>
            </Form>
           </div>
         </div>

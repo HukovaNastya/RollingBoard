@@ -68,7 +68,7 @@ img {
 }
 
 .full-height {
-  height: calc(100vh - 158px);
+  height: calc(100vh - 150px);
 }
 
 .container {
@@ -230,12 +230,10 @@ img {
 .auth-form {
   background: #101113;
   padding: 60px 40px;
-  /* margin: 0; */
 }
 
-
-input, label {
-  display:block;
+.form-container label {
+  margin-bottom: 5px;
 }
 
 label {
@@ -248,8 +246,7 @@ label {
 input {
   border: 1px solid #343A40;
   border-radius: 4px;
-  padding: 6px 0px 6px 12px;
-  width: 380px;
+  padding: 6px 260px 6px 12px;
   background: #1A1B1E;
 }
 
@@ -262,4 +259,31 @@ input:focus {
   font-weight: 400;
   line-height: 1.5;
   font-size: 14px;
+}
+
+.auth-wrapper {
+  background-color: #000;
+  background-image: url('./assets/auth-page-background.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+.form-wrapper div {
+  padding-top: 20px;
+}
+
+.form-box .auth-label {
+  padding-bottom: 6px;
+}
+
+.info-box {
+ margin-right: 40px;
+}
+
+.span-text {
+  color: #C1C2C5;
+}
+
+.button-wrapper {
+  margin: 0 auto;
 }
