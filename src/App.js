@@ -6,6 +6,8 @@ import {
 
 import HomePage from '../src/pages/HomePage/HomePage';
 import ErrorPage from '../src/pages/ErrorPage/ErrorPage';
+import SignUpPage from '../src/pages/SignUpPage/SignUpPage';
+import LogInPage from '../src/pages/LogInPage/LogInPage';
 
 let router = createBrowserRouter([
   {
@@ -13,17 +15,14 @@ let router = createBrowserRouter([
     element: <HomePage/>,
     errorElement: <ErrorPage/>,
   },
-  // {
-  //   // TODO rename listOfTodoFromApi => todos
-  //   path: "todos",
-  //   element: <TodosPage/>,
-  // },
-  // {
-  //   // TODO rename "todo/:todoId" => todos/:todoId
-  //   path: "todo/:todoId",
-  //   element: <ToDoPage/>,
-  //   loader: getTodos,
-  // },
+  {
+    path: "sign-in",
+    element: <SignUpPage/>,
+  },
+  {
+    path: "log-in",
+    element: <LogInPage/>,
+  },
 ]);
 
 if (import.meta.hot) {

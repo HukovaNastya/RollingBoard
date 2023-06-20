@@ -4,8 +4,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  height: calc(100vh - 158px);
-  min-height: 330px;
   display: flex;
   align-items: center;
 }
