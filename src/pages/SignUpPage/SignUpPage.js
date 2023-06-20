@@ -54,14 +54,14 @@ const SignUpPage = () => {
                     name="password"
                     placeholder='passwords'
                   />
-                </div>
-              </div>
-              <div>
-                <h3 className='text text-medium'>Already have an account? <span className='span-text text'><Link to='/log-in'>Sign in</Link></span></h3>
-              </div>
-              <div className='button-wrapper'>
-                <button className='button-default'>Create an Account</button>
                </div>
+               <div>
+                 <h3 className='text text-medium'>Already have an account? <span className='span-text text'><Link to='/sign-in'>Sign</Link></span></h3>
+               </div>
+               <div className='button-wrapper'>
+                 <button className='button-default'>Create an Account</button>
+               </div>
+            </div>
            </Form>
           </div>
         </div>
